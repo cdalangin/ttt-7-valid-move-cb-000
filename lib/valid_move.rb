@@ -3,9 +3,9 @@ def valid_move?(board, index)
   if index.between?(1,9)    #if position is within 1=9
     if position_taken?(board, index) && (index <=0 || index >= 10) #BUT its taken
       return false
-    else
-      true
     end
+  else
+    return true
   end
 end
 
