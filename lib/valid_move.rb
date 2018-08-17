@@ -6,8 +6,10 @@ def valid_move?(board, index)
     else
       return false
     end
-  else
-    return true
+  elsif index <=0 == true || index >= 10 == true  #if it is NOT within 1-9
+      return false
+  else 
+      return true
   end
 end
 
