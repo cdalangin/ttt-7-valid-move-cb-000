@@ -1,12 +1,10 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
   if index.between?(1,9)    #if position is within 1=9
-    if position_taken?(board, index) == false #BUT its taken
+    if position_taken?(board, index) == false && (index <=0 == true || index >= 10 == true )#BUT its taken
       return true
-    else
-      return false
     end
-  elsif index <=0 == true || index >= 10 == true  #if it is NOT within 1-9
+  elsif   #if it is NOT within 1-9
     return false
   else
      true
